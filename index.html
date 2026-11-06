@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Home — YM Travel & Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Floating 3D Header (Logo Only, Mobile Buttons inside Offcanvas) -->
+  <header class="site-header" id="siteHeader">
+    <a href="index.html" class="d-flex align-items-center text-decoration-none" title="YM Travel & Services">
+      <img src="assets/img/logo.svg" class="brand-logo" alt="YM Travel and Services">
+    </a>
+    <nav class="desktop-nav d-none d-xl-flex">
+      <a href="index.html#s" data-sec="s" data-t="n1" class="active-link">Services</a>
+      <a href="index.html#vs" data-sec="vs" data-t="nv">Visas</a>
+      <a href="index.html#su" data-sec="su" data-t="nu">Study</a>
+      <a href="index.html#sk" data-sec="sk" data-t="nk">Scholarships</a>
+      <a href="index.html#sm" data-sec="sm" data-t="nm">Medical</a>
+      <a href="news.html" data-t="nn" class="">News</a>
+      <a href="index.html#c" data-sec="c" data-t="n3">Contact</a>
+    </nav>
+    <div class="ms-auto ms-xl-2 d-flex align-items-center gap-2">
+      <div class="lang-switch">
+        <button type="button" data-l="en" class="on">EN</button>
+        <button type="button" data-l="fr">FR</button>
+      </div>
+      <a href="login.html" class="ym-btn d-none d-xl-inline-flex"
+        style="background:linear-gradient(180deg,#ffffff,#e3ebfa);color:#12275a !important;box-shadow:0 3px 0 #b3c4e6">
+        <span>🔑</span> <span data-t="loginBtn">SignIn/SignUp</span>
+      </a>
+
+      <a class="ym-btn wa-link d-none d-xl-inline-flex" href="https://wa.me/237695679191" target="_blank"
+        rel="noopener">WhatsApp</a>
+      <button class="hb-btn d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileOffcanvas"
+        aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Right-Side Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end ym-offcanvas" tabindex="-1" id="mobileOffcanvas">
+    <div class="offcanvas-header">
+      <div class="d-flex align-items-center">
+        <img src="assets/img/logo.svg" alt="YM Travel" style="height:48px;width:auto;object-fit:contain">
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <div class="mb-3">
+        <a class="nav-link-mobile" href="index.html#s"><span data-t="n1">Services</span> <span>→</span></a>
+        <a class="nav-link-mobile" href="index.html#vs"><span data-t="nv">Visas</span> <span>🛂</span></a>
+        <a class="nav-link-mobile" href="index.html#su"><span data-t="nu">Study</span> <span>🎓</span></a>
+        <a class="nav-link-mobile" href="index.html#sk"><span data-t="nk">Scholarships</span> <span>🏅</span></a>
+        <a class="nav-link-mobile" href="index.html#sm"><span data-t="nm">Medical</span> <span>🩺</span></a>
+        <a class="nav-link-mobile" href="news.html"><span data-t="nn">News & Updates</span> <span>📰</span></a>
+        <a class="nav-link-mobile" href="index.html#c"><span data-t="n3">Contact</span> <span>📍</span></a>
+      </div>
+      <div class="mt-auto pt-3 border-top d-grid gap-2">
+
+        <a href="login.html" class="ym-btn w-100 py-3"
+          style="background:linear-gradient(180deg,#1d3a82,#0d1c4a);box-shadow:0 4px 0 #061030">🔑 <span
+            data-t="loginRegNav">SignIn/SignUp</span></a>
+        <a href="https://wa.me/237695679191" class="ym-btn wa-link w-100 py-3" target="_blank" rel="noopener">💬 <span
+            data-t="wa">Chat on WhatsApp</span></a>
+      </div>
+    </div>
+  </div>
+  <main>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+      <div class="sun"></div>
+      <svg class="bg-ellipses" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#6fb4ff"></stop>
+            <stop offset="1" stop-color="#1b4fb8"></stop>
+          </linearGradient>
+          <linearGradient id="o" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ffb81c"></stop>
+            <stop offset="1" stop-color="#f26a1b"></stop>
+          </linearGradient>
+        </defs>
+        <ellipse cx="230" cy="190" rx="230" ry="62" fill="url(#a)" opacity=".75" style="--r:-18deg;--d:15s"></ellipse>
+        <ellipse cx="300" cy="260" rx="260" ry="70" fill="url(#a)" opacity=".6" style="--r:-30deg;--d:19s"></ellipse>
+        <ellipse cx="200" cy="330" rx="210" ry="58" fill="url(#o)" opacity=".85" style="--r:-8deg;--d:12s"></ellipse>
+        <ellipse cx="420" cy="140" rx="220" ry="60" fill="url(#a)" opacity=".55" style="--r:24deg;--d:17s"></ellipse>
+        <ellipse cx="120" cy="460" rx="240" ry="64" fill="url(#a)" opacity=".5" style="--r:-34deg;--d:21s"></ellipse>
+        <ellipse cx="560" cy="420" rx="200" ry="56" fill="url(#o)" opacity=".6" style="--r:16deg;--d:16s"></ellipse>
+      </svg>
+
+      <!-- Animated 3D Plane -->
+      <div class="plane">
+        <svg viewBox="0 0 200 100">
+          <defs>
+            <linearGradient id="pb" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#fff2c4"></stop>
+              <stop offset=".5" stop-color="#ffb81c"></stop>
+              <stop offset="1" stop-color="#e2540f"></stop>
+            </linearGradient>
+            <linearGradient id="pw" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffd35a"></stop>
+              <stop offset="1" stop-color="#f26a1b"></stop>
+            </linearGradient>
+          </defs>
+          <polygon points="92,54 142,54 70,96 54,96" fill="#a63a0a"></polygon>
+          <path d="M6 52C30 42 130 38 192 50C130 64 30 62 6 52Z" fill="url(#pb)"></path>
+          <polygon points="22,50 44,48 24,22 14,22" fill="url(#pw)"></polygon>
+          <polygon points="92,48 142,48 70,6 54,6" fill="url(#pw)"></polygon>
+          <rect x="134" y="44" width="30" height="6" rx="3" fill="#12275a" opacity=".7"></rect>
+        </svg>
+      </div>
+
+      <a href="#s" class="dn-scroll d-none d-md-flex">
+        <i>↓</i>
+        <span data-t="d">Discover how we can simplify your journey</span>
+      </a>
+
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-12 col-lg-7 col-xl-6">
+            <div class="hi-card">
+              <div class="badge-3d">
+                <img src="assets/img/logo.svg" alt="YM Travel and Services – Study in China"
+                  src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20480%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22sunGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%220%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23fff033%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2255%25%22%20stop-color%3D%22%23ffaa00%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2285%25%22%20stop-color%3D%22%23e63900%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23b31b00%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22pagodaGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23eb3310%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23a81300%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22blueWave%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%220%25%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230b4da2%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2255%25%22%20stop-color%3D%22%230088ff%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23004191%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22orangeWave%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%220%25%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23d93800%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2250%25%22%20stop-color%3D%22%23ff7b00%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23ffaa00%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22ymBlue%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%220%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230088e8%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2308408a%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22travelOrange%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%220%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23ff8c1a%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23d44000%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3C!--%20Sunset%20Sun%20Circle%20--%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22248%22%20cy%3D%22158%22%20r%3D%2278%22%20fill%3D%22url(%23sunGrad)%22%2F%3E%0A%20%20%20%20%20%20%3C!--%20Sea%20Reflection%20Lines%20--%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M180%20205%20H315%20M192%20213%20H302%20M210%20221%20H285%22%20stroke%3D%22%23ffcf52%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20opacity%3D%220.75%22%2F%3E%0A%20%20%20%20%20%20%3C!--%20Birds%20--%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M262%20122%20Q266%20116%20270%20121%20Q274%20116%20278%20122%22%20fill%3D%22none%22%20stroke%3D%22%238c1d00%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M258%20134%20Q263%20128%20267%20133%20Q271%20128%20276%20134%22%20fill%3D%22none%22%20stroke%3D%22%238c1d00%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%0A%20%20%20%20%20%20%3C!--%20Bonsai%20Tree%20Left%20--%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M112%20222%20C116%20208%2C%20118%20195%2C%20114%20185%22%20stroke%3D%22%23a81300%22%20stroke-width%3D%225.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M115%20198%20L102%20188%20M115%20192%20L127%20184%22%20stroke%3D%22%23a81300%22%20stroke-width%3D%223.5%22%20stroke-linecap%3D%22round%22%2F%3E%0A%20%20%20%20%20%20%3Cellipse%20cx%3D%2297%22%20cy%3D%22184%22%20rx%3D%2214%22%20ry%3D%226.5%22%20fill%3D%22%23c91f05%22%2F%3E%0A%20%20%20%20%20%20%3Cellipse%20cx%3D%22114%22%20cy%3D%22175%22%20rx%3D%2218%22%20ry%3D%227.5%22%20fill%3D%22%23d92b09%22%2F%3E%0A%20%20%20%20%20%20%3Cellipse%20cx%3D%22131%22%20cy%3D%22183%22%20rx%3D%2213%22%20ry%3D%226%22%20fill%3D%22%23c91f05%22%2F%3E%0A%20%20%20%20%20%20%3C!--%20Red%20Chinese%20Pagoda%20--%3E%0A%20%20%20%20%20%20%3Cg%20fill%3D%22url(%23pagodaGrad)%22%3E%0A%20%20%20%20%20%20%20%20%3C!--%20Base%20mound%20--%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M92%20228%20Q115%20208%20140%20218%20L205%20222%20L205%20234%20L90%20234%20Z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C!--%20Spire%20--%3E%0A%20%20%20%20%20%20%20%20%3Cpolygon%20points%3D%22159%2C54%20162%2C85%20156%2C85%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C!--%20Tier%201%20Roof%20--%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M126%2098%20Q159%2080%20192%2098%20L182%20103%20L136%20103%20Z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22142%22%20y%3D%22103%22%20width%3D%2234%22%20height%3D%2210%22%20rx%3D%221%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C!--%20Tier%202%20Roof%20--%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M118%20122%20Q159%20104%20200%20122%20L189%20128%20L129%20128%20Z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22137%22%20y%3D%22128%22%20width%3D%2244%22%20height%3D%2211%22%20rx%3D%221%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C!--%20Tier%203%20Roof%20--%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M110%20148%20Q159%20130%20208%20148%20L196%20155%20L122%20155%20Z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22132%22%20y%3D%22155%22%20width%3D%2254%22%20height%3D%2212%22%20rx%3D%221%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C!--%20Tier%204%20Roof%20--%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M103%20176%20Q159%20158%20215%20176%20L202%20184%20L116%20184%20Z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22128%22%20y%3D%22184%22%20width%3D%2262%22%20height%3D%2214%22%20rx%3D%221%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C!--%20Tier%205%20Base%20Roof%20--%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M98%20205%20Q159%20187%20220%20205%20L206%20213%20L112%20213%20Z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22125%22%20y%3D%22213%22%20width%3D%2268%22%20height%3D%2220%22%20rx%3D%221%22%2F%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3C!--%20Pagoda%20Windows%20%26%20Arch%20--%3E%0A%20%20%20%20%20%20%3Cg%20fill%3D%22%23ffffff%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22148%22%20y%3D%22105%22%20width%3D%224%22%20height%3D%226%22%2F%3E%3Crect%20x%3D%22157%22%20y%3D%22105%22%20width%3D%224%22%20height%3D%226%22%2F%3E%3Crect%20x%3D%22166%22%20y%3D%22105%22%20width%3D%224%22%20height%3D%226%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22145%22%20y%3D%22130%22%20width%3D%224%22%20height%3D%227%22%2F%3E%3Crect%20x%3D%22153%22%20y%3D%22130%22%20width%3D%224%22%20height%3D%227%22%2F%3E%3Crect%20x%3D%22161%22%20y%3D%22130%22%20width%3D%224%22%20height%3D%227%22%2F%3E%3Crect%20x%3D%22169%22%20y%3D%22130%22%20width%3D%224%22%20height%3D%227%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22141%22%20y%3D%22157%22%20width%3D%224%22%20height%3D%228%22%2F%3E%3Crect%20x%3D%22149%22%20y%3D%22157%22%20width%3D%224%22%20height%3D%228%22%2F%3E%3Crect%20x%3D%22157%22%20y%3D%22157%22%20width%3D%224%22%20height%3D%228%22%2F%3E%3Crect%20x%3D%22165%22%20y%3D%22157%22%20width%3D%224%22%20height%3D%228%22%2F%3E%3Crect%20x%3D%22173%22%20y%3D%22157%22%20width%3D%224%22%20height%3D%228%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22139%22%20y%3D%22187%22%20width%3D%225%22%20height%3D%229%22%2F%3E%3Crect%20x%3D%22148%22%20y%3D%22187%22%20width%3D%225%22%20height%3D%229%22%2F%3E%3Crect%20x%3D%22157%22%20y%3D%22187%22%20width%3D%225%22%20height%3D%229%22%2F%3E%3Crect%20x%3D%22166%22%20y%3D%22187%22%20width%3D%225%22%20height%3D%229%22%2F%3E%3Crect%20x%3D%22175%22%20y%3D%22187%22%20width%3D%225%22%20height%3D%229%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M151%20232%20V219%20Q159%20214%20167%20219%20V232%20Z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22135%22%20y%3D%22218%22%20width%3D%229%22%20height%3D%2212%22%20rx%3D%222%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22174%22%20y%3D%22218%22%20width%3D%229%22%20height%3D%2212%22%20rx%3D%222%22%2F%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3C!--%20Dynamic%20Swoosh%20Waves%20--%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M105%20236%20C215%20268%2C%20335%20225%2C%20372%20135%20C345%20215%2C%20235%20252%2C%20105%20236%20Z%22%20fill%3D%22url(%23blueWave)%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M148%20248%20C258%20272%2C%20368%20212%2C%20384%20134%20C378%20218%2C%20278%20265%2C%20148%20248%20Z%22%20fill%3D%22url(%23orangeWave)%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M172%20258%20C295%20288%2C%20398%20225%2C%20396%20136%20C412%20228%2C%20312%20288%2C%20172%20258%20Z%22%20fill%3D%22url(%23blueWave)%22%2F%3E%0A%20%20%20%20%20%20%3C!--%20Blue%20%26%20White%20Jet%20Airplane%20--%3E%0A%20%20%20%20%20%20%3Cg%20transform%3D%22translate(290%2C%2058)%20rotate(-14)%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M8%2055%20L48%2045%20L18%2022%20L8%2025%20Z%22%20fill%3D%22%230066cc%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M2%2058%20C35%2044%2C%2088%2032%2C%20118%2034%20C124%2035%2C%20126%2039%2C%20120%2043%20C92%2054%2C%2038%2062%2C%202%2058%20Z%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%2308408a%22%20stroke-width%3D%222%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M8%2056%20C38%2048%2C%2085%2038%2C%20116%2037%22%20stroke%3D%22%230077e6%22%20stroke-width%3D%223%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpolygon%20points%3D%223%2C56%2016%2C52%2010%2C34%202%2C37%22%20fill%3D%22%230055b3%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M52%2048%20L88%2052%20L68%2076%20L54%2074%20Z%22%20fill%3D%22%2308408a%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cellipse%20cx%3D%2278%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%225%22%20fill%3D%22%23003d82%22%2F%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3C!--%20Typography%3A%20Ym%20Travel%20--%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2268%22%20y%3D%22334%22%20font-family%3D%22'Brush%20Script%20MT'%2C%20'Segoe%20Script'%2C%20'Pacifico'%2C%20cursive%22%20font-size%3D%2284%22%20font-weight%3D%22bold%22%20font-style%3D%22italic%22%20fill%3D%22url(%23ymBlue)%22%3EYm%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22195%22%20y%3D%22334%22%20font-family%3D%22'Brush%20Script%20MT'%2C%20'Segoe%20Script'%2C%20'Pacifico'%2C%20cursive%22%20font-size%3D%2284%22%20font-weight%3D%22bold%22%20font-style%3D%22italic%22%20fill%3D%22url(%23travelOrange)%22%3ETravel%3C%2Ftext%3E%0A%20%20%20%20%20%20%3C!--%20Red%20Chinese%20Stamp%20Seal%20(%E6%B1%89%E5%AD%A6)%20--%3E%0A%20%20%20%20%20%20%3Cg%20transform%3D%22translate(388%2C%20282)%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%2244%22%20height%3D%2282%22%20rx%3D%2218%22%20fill%3D%22%23d41400%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%226%22%20cy%3D%2214%22%20r%3D%222.5%22%20fill%3D%22%23fff%22%20opacity%3D%220.6%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2239%22%20cy%3D%2268%22%20r%3D%223%22%20fill%3D%22%23fff%22%20opacity%3D%220.5%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Ctext%20x%3D%2222%22%20y%3D%2236%22%20text-anchor%3D%22middle%22%20font-family%3D%22serif%22%20font-size%3D%2226%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%3E%E6%B1%89%3C%2Ftext%3E%0A%20%20%20%20%20%20%20%20%3Ctext%20x%3D%2222%22%20y%3D%2268%22%20text-anchor%3D%22middle%22%20font-family%3D%22serif%22%20font-size%3D%2226%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%3E%E5%AD%A6%3C%2Ftext%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3C!--%20Subtitles%20--%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22245%22%20y%3D%22368%22%20text-anchor%3D%22middle%22%20font-family%3D%22'Manrope'%2C%20sans-serif%22%20font-size%3D%2221%22%20font-weight%3D%22800%22%20fill%3D%22%23174c8f%22%20letter-spacing%3D%225%22%3EAND%20SERVICES%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22132%22%20y1%3D%22394%22%20x2%3D%22165%22%20y2%3D%22394%22%20stroke%3D%22%23b81d00%22%20stroke-width%3D%222.5%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22245%22%20y%3D%22402%22%20text-anchor%3D%22middle%22%20font-family%3D%22sans-serif%22%20font-size%3D%2226%22%20font-weight%3D%22bold%22%20fill%3D%22%23b81d00%22%20letter-spacing%3D%223%22%3E%E6%97%85%E8%A1%8C%E6%9C%8D%E5%8A%A1%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22325%22%20y1%3D%22394%22%20x2%3D%22358%22%20y2%3D%22394%22%20stroke%3D%22%23b81d00%22%20stroke-width%3D%222.5%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22245%22%20y%3D%22436%22%20text-anchor%3D%22middle%22%20font-family%3D%22'Manrope'%2C%20sans-serif%22%20font-size%3D%2226%22%20font-weight%3D%22800%22%20fill%3D%22%23174c8f%22%20letter-spacing%3D%221%22%3EStudy%20in%20China%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E">
+              </div>
+              <h1 data-t="h">Your gateway to China and the world</h1>
+              <p class="mb-4" data-t="s">Travel, business and international logistics, from Douala, Cameroon.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="ym-btn wa-link" target="_blank" rel="noopener" data-t="wa"
+                  href="https://wa.me/237695679191?text=Hello%20YM%20Travel%20%26%20Services%2C%20I%20would%20like%20to%20start%20a%20procedure.">Chat
+                  on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OUR SERVICES (FULL-WIDTH SWIPER SLIDER) -->
+    <section id="s" class="overflow-hidden">
+      <div class="container mb-2">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3">
+          <div>
+            <h2 class="section-title" data-t="st">Our Services</h2>
+            <p class="section-subtitle mb-0" data-t="si">YM Travel &amp; Services assists individuals, students,
+              entrepreneurs, traders and partner agencies with international travel, visas, business services and
+              logistics between Cameroon, China and other destinations.</p>
+          </div>
+          <div class="d-flex gap-2">
+            <button type="button" class="hb-btn swiper-button-disabled" id="srvPrev" aria-label="Previous slide"
+              tabindex="-1" aria-controls="swiperWrapper" aria-disabled="true" disabled="">←</button>
+            <button type="button" class="hb-btn" id="srvNext" aria-label="Next slide" tabindex="0"
+              aria-controls="swiperWrapper" aria-disabled="false">→</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid px-0">
+        <div class="swiper service-swiper swiper-watch-progress" id="serviceSwiper">
+          <div class="swiper-wrapper" id="swiperWrapper" aria-live="off">
+            <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" role="group"
+              aria-label="1 / 5" style="width: 405.273px; margin-right: 22px;">
+              <div class="service-card k0" data-i="0"
+                style="transform: perspective(1100px) rotateY(5.55751deg) rotateZ(-0.972565deg) translateY(4.86282px) scale(0.987843);">
+                <b class="num-watermark">01</b>
+                <i class="ic">🛂</i>
+                <h3>Chinese Visas (Business, Tourist, Student, Medical)</h3>
+                <ul>
+                  <li>Business 3M Single: Passport (6m+), CNI/Residence card, 4×4cm white bg photo</li>
+                  <li>Business 6M Double &amp; 1Y Multiple: + Previous Chinese visa &amp; entry/exit stamps</li>
+                  <li>Tourist Visa: Passport, CNI/Residence card, Photo &amp; Birth certificate</li>
+                  <li>Medical Visa: Contact us on WhatsApp for personalized document assistance</li>
+                </ul>
+                <em class="more-pill">Learn more →</em>
+              </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide-visible swiper-slide-next" role="group" aria-label="2 / 5"
+              style="width: 405.273px; margin-right: 22px;">
+              <div class="service-card k1" data-i="1"
+                style="transform: perspective(1100px) rotateY(-8.86495deg) rotateZ(1.55137deg) translateY(7.75683px) scale(0.980608);">
+                <b class="num-watermark">02</b>
+                <i class="ic">✉️</i>
+                <h3>Invitation Letters for China — Agencies only</h3>
+                <ul>
+                  <li>Tourist letters: business license, embassy email, letter, itinerary, hotel and flight booking</li>
+                  <li>Company letters with complete company documentation</li>
+                  <li>Invitation letters for Turkey</li>
+                </ul>
+                <em class="more-pill">Learn more →</em>
+              </div>
+            </div>
+
+            <div class="swiper-slide" role="group" aria-label="3 / 5" style="width: 405.273px; margin-right: 22px;">
+              <div class="service-card k2" data-i="2"
+                style="transform: perspective(1100px) rotateY(-21.6deg) rotateZ(3.78deg) translateY(18.9px) scale(0.95275);">
+                <b class="num-watermark">03</b>
+                <i class="ic">🚢</i>
+                <h3>Supply Chain, Import-Export &amp; Customs</h3>
+                <ul>
+                  <li>International transport and logistics coordination</li>
+                  <li>Purchase and import of cars, trucks and commercial vehicles</li>
+                  <li>Customs procedures and shipment tracking</li>
+                  <li>Coordination with licensed logistics partners</li>
+                </ul>
+                <em class="more-pill">Learn more →</em>
+              </div>
+            </div>
+
+            <div class="swiper-slide" role="group" aria-label="4 / 5" style="width: 405.273px; margin-right: 22px;">
+              <div class="service-card k3" data-i="3"
+                style="transform: perspective(1100px) rotateY(-21.6deg) rotateZ(3.78deg) translateY(18.9px) scale(0.95275);">
+                <b class="num-watermark">04</b>
+                <i class="ic">💳</i>
+                <h3>Payments &amp; Top-Ups (Cash, Mobile &amp; Bank)</h3>
+                <ul>
+                  <li>Cash, Orange Money &amp; MTN Money accepted</li>
+                  <li>WeChat Pay &amp; Alipay top-ups</li>
+                  <li>Bank account transfer &amp; top-up services</li>
+                </ul>
+                <em class="more-pill">Learn more →</em>
+              </div>
+            </div>
+
+            <div class="swiper-slide" role="group" aria-label="5 / 5" style="width: 405.273px; margin-right: 22px;">
+              <div class="service-card k4" data-i="4"
+                style="transform: perspective(1100px) rotateY(-21.6deg) rotateZ(3.78deg) translateY(18.9px) scale(0.95275);">
+                <b class="num-watermark">05</b>
+                <i class="ic">🎓</i>
+                <h3>Student Visa — Studies in China</h3>
+                <ul>
+                  <li>Passport, CNI &amp; Passport-size photo</li>
+                  <li>Diploma(s) obtained, Academic transcripts &amp; optional English test</li>
+                  <li>Criminal record certificate &amp; Birth certificate</li>
+                  <li>Guarantor/sponsor ID (CNI or passport) &amp; occupation</li>
+                </ul>
+                <em class="more-pill">Learn more →</em>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+              aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0"
+              role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0"
+              role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0"
+              role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0"
+              role="button" aria-label="Go to slide 5"></span>
+          </div>
+          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="hw" id="h">
+      <div class="container">
+        <h2 class="section-title" data-t="hw">How it works</h2>
+        <div class="row g-4 mt-2" id="stGrid">
+          <div class="col-12 col-md-4">
+            <div class="step-card">
+              <b class="step-num">1</b>
+              <h4>Contact us</h4>
+              <p>Reach us on WhatsApp, by email or through the online form and tell us about your project.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="step-card">
+              <b class="step-num">2</b>
+              <h4>Send your documents</h4>
+              <p>Provide your Passport, CNI, 4×4 cm photo and category papers via the Client Portal or WhatsApp.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="step-card">
+              <b class="step-num">3</b>
+              <h4>We handle the rest</h4>
+              <p>Pay easily via Cash, Orange Money, MTN Money, WeChat, Alipay, or Bank while we track your file.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISA CATEGORIES -->
+    <section class="alt2" id="vs">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+          <div>
+            <h2 class="section-title" data-t="vt">Chinese visa categories</h2>
+            <p class="section-subtitle mb-0" data-t="vi">Choose the visa that matches your purpose. Click Learn More or
+              Checklist to see the exact documents to provide.</p>
+          </div>
+
+        </div>
+        <div class="row g-4" id="vgGrid">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="ym-card">
+              <div class="cb-icon" style="width:auto;align-self:flex-start;padding:0 16px;font-size:16px">M-3M</div>
+              <h4>Business Visa (3 Months, Single)</h4>
+              <p>Passport (6+ months), CNI/residence card, 4×4 cm photo (white background).</p>
+              <div class="mt-auto pt-3 d-flex justify-content-between align-items-center border-top">
+                <a class="lk-action p-0" onclick="openPortalWithVisa('M3')">📋 Learn more / Docs →</a>
+                <a class="lk-action p-0 text-success" target="_blank" rel="noopener"
+                  href="https://wa.me/237695679191?text=Hello%2C%20I%E2%80%99m%20interested%20in%3A%20Business%20Visa%20(3%20Months%2C%20Single)">WhatsApp
+                  ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="ym-card">
+              <div class="cb-icon" style="width:auto;align-self:flex-start;padding:0 16px;font-size:16px">M-6M</div>
+              <h4>Business Visa (6 Months, Double)</h4>
+              <p>Passport, CNI/residence card, 4×4 cm photo, previous Chinese visa &amp; stamps if available.</p>
+              <div class="mt-auto pt-3 d-flex justify-content-between align-items-center border-top">
+                <a class="lk-action p-0" onclick="openPortalWithVisa('M6')">📋 Learn more / Docs →</a>
+                <a class="lk-action p-0 text-success" target="_blank" rel="noopener"
+                  href="https://wa.me/237695679191?text=Hello%2C%20I%E2%80%99m%20interested%20in%3A%20Business%20Visa%20(6%20Months%2C%20Double)">WhatsApp
+                  ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="ym-card">
+              <div class="cb-icon" style="width:auto;align-self:flex-start;padding:0 16px;font-size:16px">M-1Y</div>
+              <h4>Business Visa (1 Year, Multiple)</h4>
+              <p>Passport, CNI/residence card, 4×4 cm photo, previous Chinese visa &amp; entry/exit stamps.</p>
+              <div class="mt-auto pt-3 d-flex justify-content-between align-items-center border-top">
+                <a class="lk-action p-0" onclick="openPortalWithVisa('M12')">📋 Learn more / Docs →</a>
+                <a class="lk-action p-0 text-success" target="_blank" rel="noopener"
+                  href="https://wa.me/237695679191?text=Hello%2C%20I%E2%80%99m%20interested%20in%3A%20Business%20Visa%20(1%20Year%2C%20Multiple)">WhatsApp
+                  ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="ym-card">
+              <div class="cb-icon" style="width:auto;align-self:flex-start;padding:0 16px;font-size:16px">L</div>
+              <h4>Tourist Visa</h4>
+              <p>Passport, CNI or residence card, passport-size photo, and birth certificate.</p>
+              <div class="mt-auto pt-3 d-flex justify-content-between align-items-center border-top">
+                <a class="lk-action p-0" onclick="openPortalWithVisa('L')">📋 Learn more / Docs →</a>
+                <a class="lk-action p-0 text-success" target="_blank" rel="noopener"
+                  href="https://wa.me/237695679191?text=Hello%2C%20I%E2%80%99m%20interested%20in%3A%20Tourist%20Visa">WhatsApp
+                  ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="ym-card">
+              <div class="cb-icon" style="width:auto;align-self:flex-start;padding:0 16px;font-size:16px">X</div>
+              <h4>Student Visa — Studies in China</h4>
+              <p>Passport, CNI, photo, diplomas, transcripts, criminal record, birth certificate &amp; sponsor ID.</p>
+              <div class="mt-auto pt-3 d-flex justify-content-between align-items-center border-top">
+                <a class="lk-action p-0" onclick="openPortalWithVisa('X')">📋 Learn more / Docs →</a>
+                <a class="lk-action p-0 text-success" target="_blank" rel="noopener"
+                  href="https://wa.me/237695679191?text=Hello%2C%20I%E2%80%99m%20interested%20in%3A%20Student%20Visa%20%E2%80%94%20Studies%20in%20China">WhatsApp
+                  ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="ym-card">
+              <div class="cb-icon" style="width:auto;align-self:flex-start;padding:0 16px;font-size:16px">S2</div>
+              <h4>Medical Visa</h4>
+              <p>To find out the required documents and receive personalized assistance, contact us on WhatsApp.</p>
+              <div class="mt-auto pt-3 d-flex justify-content-between align-items-center border-top">
+                <a class="lk-action p-0" onclick="openPortalWithVisa('S2')">📋 Learn more / Docs →</a>
+                <a class="lk-action p-0 text-success" target="_blank" rel="noopener"
+                  href="https://wa.me/237695679191?text=Hello%2C%20I%E2%80%99m%20interested%20in%3A%20Medical%20Visa">WhatsApp
+                  ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDY IN CHINA -->
+    <section id="su">
+      <div class="container">
+        <h2 class="section-title" data-t="ut">Study in China</h2>
+        <p class="section-subtitle" data-t="ui">We help students find a university in China, prepare the application
+          file and organize the trip.</p>
+        <div class="row g-4 mt-2" id="ugGrid">
+          <div class="col-12 col-md-4">
+            <div class="ym-card">
+              <div class="cb-icon">🏛️</div>
+              <h4>University admissions</h4>
+              <p>Assistance with admissions at universities in China.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="ym-card">
+              <div class="cb-icon">📁</div>
+              <h4>Application files</h4>
+              <p>Support to prepare your complete application file.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="ym-card">
+              <div class="cb-icon">🛂</div>
+              <h4>Visa &amp; flights</h4>
+              <p>Student visa procedure and flight reservations.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="fw-bolder mt-5 mb-3" style="font-size:28px" data-t="us">How to apply</h3>
+        <div class="row g-4" id="ustGrid">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="step-card">
+              <b class="step-num">1</b>
+              <h4>Share your profile</h4>
+              <p>Tell us your level of study, field and country.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="step-card">
+              <b class="step-num">2</b>
+              <h4>Choose your programs</h4>
+              <p>We help you shortlist suitable universities.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="step-card">
+              <b class="step-num">3</b>
+              <h4>Prepare your file</h4>
+              <p>We guide you on the documents to gather.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="step-card">
+              <b class="step-num">4</b>
+              <h4>Apply and wait</h4>
+              <p>Your file is submitted and you await the admission result.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="step-card">
+              <b class="step-num">5</b>
+              <h4>Visa and departure</h4>
+              <p>Student visa, flight and travel planning.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 pt-2">
+          <a class="ym-btn wa-link" target="_blank" rel="noopener" data-t="wa"
+            href="https://wa.me/237695679191?text=Hello%20YM%20Travel%20%26%20Services%2C%20I%20would%20like%20to%20start%20a%20procedure.">Chat
+            on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHOLARSHIPS -->
+    <section class="alt2" id="sk">
+      <div class="container">
+        <h2 class="section-title" data-t="kt">Scholarships</h2>
+        <p class="section-subtitle" data-t="ki">Scholarships can make studying in China more affordable. Opportunities
+          and dates change often, so contact us for the latest.</p>
+        <div class="row g-4 mt-2" id="kgGrid">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="ym-card">
+              <div class="cb-icon">🏅</div>
+              <h4>Chinese Government Scholarship</h4>
+              <p>Offered by the Chinese government (CSC) to international students.</p>
+              <p class="dl"><b>Deadline:</b> varies by program — contact us for current dates</p>
+              <a class="lk-action" target="_blank" rel="noopener"
+                href="https://wa.me/237695679191?text=Hello%2C%20I%E2%80%99m%20interested%20in%3A%20Chinese%20Government%20Scholarship">Ask
+                us ↗</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="ym-card">
+              <div class="cb-icon">🏅</div>
+              <h4>Provincial and city scholarships</h4>
+              <p>Offered by regional governments to students joining local universities.</p>
+              <p class="dl"><b>Deadline:</b> varies by program — contact us for current dates</p>
+              <a class="lk-action" target="_blank" rel="noopener"
+                href="https://wa.me/237695679191?text=Hello%2C%20I%E2%80%99m%20interested%20in%3A%20Provincial%20and%20city%20scholarships">Ask
+                us ↗</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="ym-card">
+              <div class="cb-icon">🏅</div>
+              <h4>University scholarships</h4>
+              <p>Offered directly by universities to attract international students.</p>
+              <p class="dl"><b>Deadline:</b> varies by program — contact us for current dates</p>
+              <a class="lk-action" target="_blank" rel="noopener"
+                href="https://wa.me/237695679191?text=Hello%2C%20I%E2%80%99m%20interested%20in%3A%20University%20scholarships">Ask
+                us ↗</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="ym-card">
+              <div class="cb-icon">✅</div>
+              <h4>General eligibility</h4>
+              <ul class="ps-3 mb-0 small opacity-90">
+                <li class="mb-1">Non-Chinese citizen in good health</li>
+                <li class="mb-1">Academic level required by the program</li>
+                <li class="mb-1">Language level required by the program</li>
+                <li class="mb-1">Complete application file</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDICAL TRAVEL -->
+    <section id="sm">
+      <div class="container">
+        <h2 class="section-title" data-t="mt">Medical travel</h2>
+        <p class="section-subtitle" data-t="mi">Organizing a medical trip to China takes planning. We coordinate the
+          travel side so you can focus on your health.</p>
+        <div class="row g-4 mt-2" id="mgGrid">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="ym-card">
+              <div class="cb-icon">🛂</div>
+              <h4>Medical S2 visa</h4>
+              <p>Assistance with your Medical S2 visa procedure.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="ym-card">
+              <div class="cb-icon">✈️</div>
+              <h4>Flight reservations</h4>
+              <p>Booking your flights to China.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="ym-card">
+              <div class="cb-icon">🗺️</div>
+              <h4>Travel planning</h4>
+              <p>Help organizing and planning the whole trip.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="ym-card">
+              <div class="cb-icon">💳</div>
+              <h4>Payments in China</h4>
+              <p>Cash, Orange Money, MTN Money, WeChat, Alipay &amp; Bank.</p>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4 small opacity-75" style="max-width:72ch" data-t="mn">YM Travel &amp; Services is a travel agency,
+          not a medical provider. Please consult your doctor and the receiving hospital for medical decisions.</p>
+      </div>
+    </section>
+
+    <!-- NEWS & PUBLICATIONS PREVIEW SECTION -->
+    <section class="alt2" id="nw">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3">
+          <div>
+            <h2 class="section-title mb-1" data-t="nt2">News &amp; Publications</h2>
+
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+
+            <button type="button" class="ym-btn ym-btn-blue" onclick="location.href='news.html'">
+              📰 <span data-t="viewAllNews">View All News Page</span> →
+            </button>
+          </div>
+        </div>
+
+        <!-- Working Category Filter -->
+        <div class="tb-filters" id="tbHome">
+          <button type="button" class="on" data-f="0">All</button>
+
+          <button type="button" class="" data-f="1">Visas</button>
+
+          <button type="button" class="" data-f="2">Study in China</button>
+
+          <button type="button" class="" data-f="3">Scholarships</button>
+
+          <button type="button" class="" data-f="4">Medical Travel</button>
+        </div>
+
+        <!-- News Cards Grid -->
+        <div class="row g-4 mt-2" id="ngHome">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="ym-card">
+              <div class="mv-thumb" style="--t:#ffb15c;--u:#e2540f" onclick="openNewsDetail(101)" role="button">
+                <img src="https://placehold.co/800x480/1b4fb8/ffffff?text=Required+Documents+Chinese+Visas"
+                  alt="Official Required Documents for Chinese Visas (Business, Tourist, Student &amp; Medical)"
+                  onerror="this.style.display='none'">
+                <span class="mv-badge">Required Papers</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="tg-cat">Visas</small>
+                <small class="text-muted fw-semibold" style="font-size:12px">Daily Poster 🖼️</small>
+              </div>
+              <h4 role="button" onclick="openNewsDetail(101)">Official Required Documents for Chinese Visas (Business,
+                Tourist, Student &amp; Medical)</h4>
+              <p>Check the exact papers required for 3-Month, 6-Month, 1-Year Business Visas, Tourist Visas, and Studies
+                in China.</p>
+              <div class="mt-auto pt-3 d-flex justify-content-between align-items-center border-top">
+                <a class="lk-action p-0" onclick="openNewsDetail(101)">📖 Learn more →</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="ym-card">
+              <div class="mv-thumb" style="--t:#ffb15c;--u:#e2540f" onclick="openNewsDetail(102)" role="button">
+                <img src="https://placehold.co/800x480/f26a1b/ffffff?text=Canton+Fair+Business+Visa"
+                  alt="Preparing for the Canton Fair in Guangzhou from Cameroon" onerror="this.style.display='none'">
+                <span class="mv-badge">Video Briefing 🎥</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="tg-cat">Visas</small>
+                <small class="text-muted fw-semibold" style="font-size:12px">Video Briefing 🎥</small>
+              </div>
+              <h4 role="button" onclick="openNewsDetail(102)">Preparing for the Canton Fair in Guangzhou from Cameroon
+              </h4>
+              <p>How to prepare your 3-month, 6-month, or 1-year Business Visa file and set up WeChat/Alipay payments.
+              </p>
+              <div class="mt-auto pt-3 d-flex justify-content-between align-items-center border-top">
+                <a class="lk-action p-0" onclick="openNewsDetail(102)">📖 Learn more →</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="ym-card">
+              <div class="mv-thumb" style="--t:#6b8bff;--u:#12275a" onclick="openNewsDetail(103)" role="button">
+                <img src="https://placehold.co/800x480/12275a/ffffff?text=Study+in+China+Required+Papers"
+                  alt="Studying in China: Complete List of Required Documents" onerror="this.style.display='none'">
+                <span class="mv-badge">Student Checklist</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="tg-cat">Study in China</small>
+                <small class="text-muted fw-semibold" style="font-size:12px">Student Guide</small>
+              </div>
+              <h4 role="button" onclick="openNewsDetail(103)">Studying in China: Complete List of Required Documents
+              </h4>
+              <p>Passport, CNI, diplomas, academic transcripts, criminal record, birth certificate, and guarantor
+                documents.</p>
+              <div class="mt-auto pt-3 d-flex justify-content-between align-items-center border-top">
+                <a class="lk-action p-0" onclick="openNewsDetail(103)">📖 Learn more →</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="ym-card">
+              <div class="mv-thumb" style="--t:#6b8bff;--u:#12275a" onclick="openNewsDetail(104)" role="button">
+                <img src="https://placehold.co/800x480/2a7be8/ffffff?text=Student+Life+in+China"
+                  alt="Campus Life, Accommodation &amp; Easy Payments (Orange/MTN/Alipay)"
+                  onerror="this.style.display='none'">
+                <span class="mv-badge">Video Guide 🎥</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="tg-cat">Study in China</small>
+                <small class="text-muted fw-semibold" style="font-size:12px">Daily Video 🎥</small>
+              </div>
+              <h4 role="button" onclick="openNewsDetail(104)">Campus Life, Accommodation &amp; Easy Payments
+                (Orange/MTN/Alipay)</h4>
+              <p>What Cameroonian students need to know about university dormitories, residence permits, and
+                Alipay/WeChat Pay.</p>
+              <div class="mt-auto pt-3 d-flex justify-content-between align-items-center border-top">
+                <a class="lk-action p-0" onclick="openNewsDetail(104)">📖 Learn more →</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="ym-card">
+              <div class="mv-thumb" style="--t:#ffd35a;--u:#f29a1b" onclick="openNewsDetail(105)" role="button">
+                <img src="https://placehold.co/800x480/d62718/ffffff?text=CSC+%26+University+Scholarships"
+                  alt="Scholarships in China: Prepare Your Transcripts &amp; Diplomas Early"
+                  onerror="this.style.display='none'">
+                <span class="mv-badge">Scholarship Alert</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="tg-cat">Scholarships</small>
+                <small class="text-muted fw-semibold" style="font-size:12px">Daily Poster 🖼️</small>
+              </div>
+              <h4 role="button" onclick="openNewsDetail(105)">Scholarships in China: Prepare Your Transcripts &amp;
+                Diplomas Early</h4>
+              <p>Scholarship files need complete documents and must respect strict deadlines. Contact us for current
+                opportunities.</p>
+              <div class="mt-auto pt-3 d-flex justify-content-between align-items-center border-top">
+                <a class="lk-action p-0" onclick="openNewsDetail(105)">📖 Learn more →</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="ym-card">
+              <div class="mv-thumb" style="--t:#ff7b6b;--u:#b81f13" onclick="openNewsDetail(106)" role="button">
+                <img src="https://placehold.co/800x480/0b3d91/ffffff?text=Medical+Visa+Personalized+Help"
+                  alt="Medical Visa for China: Personalized Assistance on WhatsApp" onerror="this.style.display='none'">
+                <span class="mv-badge">Medical Travel</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="tg-cat">Medical Travel</small>
+                <small class="text-muted fw-semibold" style="font-size:12px">Medical Update</small>
+              </div>
+              <h4 role="button" onclick="openNewsDetail(106)">Medical Visa for China: Personalized Assistance on
+                WhatsApp</h4>
+              <p>To find out the required documents for a Medical Visa and receive personalized assistance, contact us
+                on WhatsApp.</p>
+              <div class="mt-auto pt-3 d-flex justify-content-between align-items-center border-top">
+                <a class="lk-action p-0" onclick="openNewsDetail(106)">📖 Learn more →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-sec" id="w">
+      <div class="container">
+        <h2 class="section-title text-white mb-4" data-t="wt">Why choose YM Travel &amp; Services?</h2>
+        <p class="wp-text" id="wp"><span>Our</span> <span>goal</span> <span>is</span> <span>to</span>
+          <span>simplify</span> <span>your</span> <span>international</span> <span>procedures</span>
+          <span>through</span> <span>a</span> <span>local</span> <span>point</span> <span>of</span>
+          <span>contact,</span> <span>personalized</span> <span>assistance,</span> <span>and</span> <span>a</span>
+          <span>network</span> <span>of</span> <span>professional</span> <span>partners.</span> <span>Whether</span>
+          <span>you</span> <span>are</span> <span>planning</span> <span>a</span> <span>business</span>
+          <span>trip,</span> <span>a</span> <span>tourist</span> <span>stay,</span> <span>a</span> <span>study</span>
+          <span>project</span> <span>in</span> <span>China,</span> <span>or</span> <span>an</span> <span>import</span>
+          <span>operation,</span> <span>we</span> <span>support</span> <span>you</span> <span>at</span>
+          <span>every</span> <span>stage</span> <span>according</span> <span>to</span> <span>your</span>
+          <span>needs.</span>
+        </p>
+        <strong data-t="tag">YM Travel &amp; Services — Your gateway to China and the world.</strong>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="ct-sec" id="c">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-12 col-lg-6">
+            <h2 class="section-title text-white mb-4" data-t="ct">Contact us</h2>
+            <div class="d-flex flex-column gap-3 fs-5">
+              <p class="mb-0">📍 <span data-t="ad">Bonapriso, Carrefour Hôtel de l’Air, Douala, Cameroon</span></p>
+              <p class="mb-0">📞 <a href="tel:+237674564070" target="_blank" rel="noopener noreferrer">+237 674 564
+                  070</a> / <a href="tel:+237695679191" target="_blank" rel="noopener noreferrer">+237 695 679 191</a>
+              </p>
+              <p class="mb-0">💬 <a class="wa-link fw-bold text-warning" target="_blank" rel="noopener"
+                  href="https://wa.me/237695679191?text=Hello%20YM%20Travel%20%26%20Services%2C%20I%20would%20like%20to%20start%20a%20procedure.">WhatsApp
+                  Direct (+237 695 679 191)</a></p>
+              <p class="mb-0">✉️ <a href="mailto:ymtravel81@gmail.com" target="_blank"
+                  rel="noopener noreferrer">ymtravel81@gmail.com</a></p>
+            </div>
+            <div class="mt-4 p-4 rounded-4"
+              style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.16)">
+              <h5 class="fw-bold text-warning mb-2" data-t="officeHoursTitle">🕒 Office Hours</h5>
+              <p class="mb-0 small opacity-90" data-t="officeHoursText">Monday – Friday: 08:30 – 18:00 | Saturday: 09:00
+                – 14:00 (Douala Local Time)</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <form id="f" class="ym-form-card">
+              <h3 class="fw-bolder mb-2" style="font-size:24px" data-t="ft">Start your procedure</h3>
+              <label data-t="nm">Medical</label>
+              <input id="n" required="" placeholder="Ex: Jean-Claude Mbarga">
+              <label data-t="ph">Phone / WhatsApp</label>
+              <input id="p" type="tel" required="" placeholder="+237 6...">
+              <label data-t="em">Email</label>
+              <input id="e" type="email" placeholder="you@example.com">
+              <label data-t="sv">Service</label>
+              <select id="v">
+                <option>Chinese Visas (Business, Tourist, Student, Medical)</option>
+                <option>Invitation Letters for China — Agencies only</option>
+                <option>Supply Chain, Import-Export &amp; Customs</option>
+                <option>Payments &amp; Top-Ups (Cash, Mobile &amp; Bank)</option>
+                <option>Student Visa — Studies in China</option>
+              </select>
+              <label data-t="ms">Message</label>
+              <textarea id="m" rows="3"></textarea>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <button type="submit" class="ym-btn" data-t="go">Send on WhatsApp</button>
+                <button type="button" class="ym-btn ym-btn-blue" id="mail" data-t="ml">Send by email</button>
+              </div>
+              <small class="d-block mt-3 opacity-75" data-t="nt">After sending, share your required documents in the
+                WhatsApp chat or by email.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 3D Service Modal -->
+  <div class="md-overlay" id="md">
+    <div class="mb-dialog" id="mb"></div>
+  </div>
+
+  <!-- Floating WhatsApp Widget -->
+  <div class="wb-float">
+    <div class="wq-popup" id="wq">
+      <button class="bx-close" id="bx" type="button">×</button>
+      <p data-t="wg">Hello! 👋 What do you need help with?</p>
+      <div id="wl"></div>
+    </div>
+    <a class="wf-btn wa-link" href="https://wa.me/237695679191" target="_blank" rel="noopener">
+      <svg viewBox="0 0 32 32">
+        <path fill="#fff" d="M16 4.5a11.4 11.4 0 0 0-9.8 17.200L4.500 27.500l6-1.600A11.400 11.400 0 1 0 16 4.500z" />
+        <path fill="#128c4a"
+          d="M12.300 10.200c-.4 0-.8.300-1 .800-.4.900-.1 2.200.8 3.600 1.100 1.700 2.600 3 4.300 3.600 1 .3 1.800.2 2.300-.4.300-.3.300-.7.200-.9l-1.600-1c-.3-.2-.6-.1-.8.200l-.4.500c-1-.4-2.200-1.600-2.700-2.600l.5-.4c.3-.2.300-.6.200-.8l-.8-1.700c-.2-.4-.5-.5-.9-.5z" />
+      </svg>
+      <span><span data-t="wb">Chat on WhatsApp</span><small data-t="wc">Direct contact</small></span>
+    </a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2 text-center">
+      <p>© YM Travel & Services — Douala, Cameroon</p>
+
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

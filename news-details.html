@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Article Details — YM Travel & Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Floating 3D Header (Logo Only, Mobile Buttons inside Offcanvas) -->
+  <header class="site-header" id="siteHeader">
+    <a href="index.html" class="d-flex align-items-center text-decoration-none" title="YM Travel & Services">
+      <img src="assets/img/logo.svg" class="brand-logo" alt="YM Travel and Services">
+    </a>
+    <nav class="desktop-nav d-none d-xl-flex">
+      <a href="index.html#s" data-sec="s" data-t="n1" class="">Services</a>
+      <a href="index.html#vs" data-sec="vs" data-t="nv">Visas</a>
+      <a href="index.html#su" data-sec="su" data-t="nu">Study</a>
+      <a href="index.html#sk" data-sec="sk" data-t="nk">Scholarships</a>
+      <a href="index.html#sm" data-sec="sm" data-t="nm">Medical</a>
+      <a href="news.html" data-t="nn" class="active-link">News</a>
+      <a href="index.html#c" data-sec="c" data-t="n3">Contact</a>
+    </nav>
+    <div class="ms-auto ms-xl-2 d-flex align-items-center gap-2">
+      <div class="lang-switch">
+        <button type="button" data-l="en" class="on">EN</button>
+        <button type="button" data-l="fr">FR</button>
+      </div>
+      <a href="login.html" class="ym-btn d-none d-xl-inline-flex" style="background:linear-gradient(180deg,#ffffff,#e3ebfa);color:#12275a !important;box-shadow:0 3px 0 #b3c4e6">
+        <span>🔑</span> <span data-t="loginBtn">Login</span>
+      </a>
+      <a href="client-portal.html" class="ym-btn ym-btn-blue d-none d-xl-inline-flex">
+        <span>👤</span> <span data-t="cpBtn">Client Portal</span>
+      </a>
+      <a class="ym-btn wa-link d-none d-xl-inline-flex" href="https://wa.me/237695679191" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="hb-btn d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileOffcanvas" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Right-Side Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end ym-offcanvas" tabindex="-1" id="mobileOffcanvas">
+    <div class="offcanvas-header">
+      <div class="d-flex align-items-center">
+        <img src="assets/img/logo.svg" alt="YM Travel" style="height:48px;width:auto;object-fit:contain">
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <div class="mb-3">
+        <a class="nav-link-mobile" href="index.html#s"><span data-t="n1">Services</span> <span>→</span></a>
+        <a class="nav-link-mobile" href="index.html#vs"><span data-t="nv">Visas</span> <span>🛂</span></a>
+        <a class="nav-link-mobile" href="index.html#su"><span data-t="nu">Study</span> <span>🎓</span></a>
+        <a class="nav-link-mobile" href="index.html#sk"><span data-t="nk">Scholarships</span> <span>🏅</span></a>
+        <a class="nav-link-mobile" href="index.html#sm"><span data-t="nm">Medical</span> <span>🩺</span></a>
+        <a class="nav-link-mobile" href="news.html"><span data-t="nn">News & Updates</span> <span>📰</span></a>
+        <a class="nav-link-mobile" href="index.html#c"><span data-t="n3">Contact</span> <span>📍</span></a>
+      </div>
+      <div class="mt-auto pt-3 border-top d-grid gap-2">
+        <a href="client-portal.html" class="ym-btn ym-btn-blue w-100 py-3">👤 <span data-t="cpBtn">Client Portal</span></a>
+        <a href="login.html" class="ym-btn w-100 py-3" style="background:linear-gradient(180deg,#1d3a82,#0d1c4a);box-shadow:0 4px 0 #061030">🔑 <span data-t="loginRegNav">Login / Register</span></a>
+        <a href="https://wa.me/237695679191" class="ym-btn wa-link w-100 py-3" target="_blank" rel="noopener">💬 <span data-t="wa">Chat on WhatsApp</span></a>
+      </div>
+    </div>
+  </div>
+<main>
+    <div class="subpage-hero">
+      <div class="container">
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <button type="button" class="ym-btn ym-btn-blue" onclick="location.href='news.html'">
+            ← <span data-t="backNews">Back to All News</span>
+          </button>
+          <button type="button" class="ym-btn" onclick="location.href='index.html'">
+            🏠 <span data-t="backHome">Back to Homepage</span>
+          </button>
+        </div>
+        <span class="badge rounded-pill bg-warning text-dark fw-bold px-3 py-2 mb-2" id="detailCatBadge">Category</span>
+        <h1 class="fw-bolder display-6 mb-2" id="detailTitle">Article Title</h1>
+        <p class="mb-0 small opacity-75" id="detailMeta">Published by YM Travel &amp; Services • Douala, Cameroon</p>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-12 col-lg-8">
+          <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm border" id="detailContentBox"></div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="ym-card" style="height:auto">
+            <h4 class="fw-bolder mb-2" data-t="needHelpTitle">Need assistance with this procedure?</h4>
+            <p class="mb-3" data-t="needHelpDesc">Our Douala team guides you step-by-step for visas, admissions, scholarships, or medical travel.</p>
+            <a class="ym-btn wa-link w-100 mb-2" id="detailWaBtn" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+            <button type="button" class="ym-btn ym-btn-blue w-100" onclick="location.href='client-portal.html'">🛂 Open Client Portal</button>
+          </div>
+
+          <div class="mt-4">
+            <h5 class="fw-bolder mb-3" data-t="relatedNews">Related Publications</h5>
+            <div class="d-flex flex-column gap-3" id="relatedNewsList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 3D Service Modal -->
+  <div class="md-overlay" id="md"><div class="mb-dialog" id="mb"></div></div>
+
+  <!-- Floating WhatsApp Widget -->
+  <div class="wb-float">
+    <div class="wq-popup" id="wq">
+      <button class="bx-close" id="bx" type="button">×</button>
+      <p data-t="wg">Hello! 👋 What do you need help with?</p>
+      <div id="wl"></div>
+    </div>
+    <a class="wf-btn wa-link" href="https://wa.me/237695679191" target="_blank" rel="noopener">
+      <svg viewBox="0 0 32 32">
+        <path fill="#fff" d="M16 4.5a11.4 11.4 0 0 0-9.8 17.200L4.500 27.500l6-1.600A11.400 11.400 0 1 0 16 4.500z" />
+        <path fill="#128c4a" d="M12.300 10.200c-.4 0-.8.300-1 .800-.4.900-.1 2.200.8 3.600 1.100 1.700 2.600 3 4.300 3.600 1 .3 1.800.2 2.300-.4.300-.3.300-.7.200-.9l-1.600-1c-.3-.2-.6-.1-.8.200l-.4.500c-1-.4-2.200-1.600-2.700-2.600l.5-.4c.3-.2.300-.6.200-.8l-.8-1.700c-.2-.4-.5-.5-.9-.5z" />
+      </svg>
+      <span><span data-t="wb">Chat on WhatsApp</span><small data-t="wc">Direct contact</small></span>
+    </a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div>© YM Travel & Services — Douala, Cameroon</div>
+      <div class="d-flex gap-3">
+        <a href="index.html" class="text-light text-decoration-none small">Home</a>
+        <a href="news.html" class="text-light text-decoration-none small">News</a>
+        <a href="client-portal.html" class="text-light text-decoration-none small">Client Portal</a>
+        <a href="login.html" class="text-light text-decoration-none small">Login</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
